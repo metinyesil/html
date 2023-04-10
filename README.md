@@ -1,8 +1,12 @@
 # HTML Kullanımı, Sıkça Kullanılan HTML Tagları ve Alabileceği Değerler
 
 Test edeceğiniz ve kullanımını sağlayacağınız ortam sizlerin öğrenme hızını arttıracaktır. 
+
 Online Olarak Test İçin: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic
+
 Program olarak Test için (Önerim): Sublime Text
+
+---
 
 ### Neden Sublime Text?
 
@@ -10,6 +14,7 @@ Program olarak Test için (Önerim): Sublime Text
 
 İndir: https://www.sublimetext.com/3
 
+---
 
 ## HTML Başlangıç sayfası
 
