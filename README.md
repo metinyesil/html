@@ -32,11 +32,13 @@ Teker teker basitçe anlatmak gerekirse;
 - Düz Yazı Stilleri
 
 `<span>Yazı</span>` - Hiçbir stil eklenmesi yapılmadan düz bir biçimde yazı yazmanızı sağlayan tag. Bu tagın verilmesinin sebebi, sadece bu yazıya stil vermek isterseniz, bunu gerçekleştirebilmenizdir.
+
 `<p> Başlık </p>` - Span tagı ile aynı işlevi görmektedir. Arasındaki tek fark, p tagı yazının altına bir satır boşluk bıraktırır. Span tagının altına br kodu kullanmak gibi.
 
 - Basit Yazı Stilleri
 
 `<b> Başlık </b>` - İçerisindeki yazıyı kalınlaştırmanızı sağlayan tag. 
+
 `<i> Başlık </i>` - İçerisindeki yazıyı italikleştirmenizi (eğik yazmanızı) sağlayan tag.
 
 - Link (a) Tagı
@@ -62,17 +64,30 @@ E'nin çalışma sebebi, sayıların toplam veya çarpım gibi sonuçlarında e�
 `
 
 `<input type="radio">` - Radio buton seçenekler arasından sadece bir adet seçmenizi sağlayan input tipidir. Örnek olarak, kayıt ol sayfasındaki cinsiyet seçimi radio button ile yapılabilir.
+
 `<input type="submit" value="Gönder">` - Submit tipi, eğer bir form gönderiyorsanız, Formun işlemesi için gerekli buton tipidir. Verileri alır ve form içerisindeki yönergeleri uygulayarak işler.
+
 `<input type="button" value="Tıkla">` - Düz butondur. a tagı verilerek link eklenebilir.
+
 `<input type="reset" value="Sıfırla">`- Submit tipi butonun tam tersidir. POST etmek için doldurduğunuz verileri temizlemek için kullanılır ve FORM içerisindeki tüm inputları sıfırlar.
+
 `<input type="file" name="myFile">` - Dosya yüklemek için kullanacağımız inputtur. Bu input, bizlerin bilgisayarımızdan dosya yüklemesine olanak sağlar.
-`<input type="hidden" name="myHiddenValue">` - Hidden yani gizli input, bizlerin içerisinde verileri saklamamıza olanak sağlayan ve kullanıcıya gözükmeyen inputlardır. Bu inputlarda genellikle kullanıcıların oturum kontrolleri bulunmaktadır.
+
+`<input type="hidden" name="myHiddenValue">` - Hidden yani gizli input, bizlerin içerisinde verileri saklamamıza olanak sağlayan ve kullanıcıya gözükmeyen inputlardır.
+Bu inputlarda genellikle kullanıcıların oturum kontrolleri bulunmaktadır.
+
 `<input type="date" name="myDate">` - Bu input, bizlere dd,mm,yyyy şeklinde bir input verir. Gün, Ay, Tarih şeklinde seçim yapabilmemizi sağlar. Bu seçimleri dilerseniz yanındaki takvim butonuna basarak siz seçebilirsiniz.
+
 `<input type="time" name="myTime">` - Time inputu date inputu ile aynı şekilde çalışmaktadır. Sadece, saat seçimi yapılmaktadır.
+
 `<input type="range" name="myRange" min="0" max="100" value="50">` - Bazı E-Ticaret sitelerinde bulunan fiyat aralığını seç, özelliği kullandıran inputtur. Bu input ile sağa veya sola kaydırarak istediğiniz değerde durdurabilirsiniz. Bu kodta, 0-100 arasında bir değer seçmemiz istenmiş ve sayfa açıldığında ise bu değeri 50 olarak belirlemiş
+
 `<input type="color" name="myColor" value="#ff0000">` - Bu input bizlere renk seçmemizi sağlayan renk paletini açar. Bu renk paleti ile bizler tüm renkleri seçebilir rgb, hex kodlarını görebiliriz.
+
 `<input type="tel" placeholder="telefon numarası giriniz">` - Bu inputsa bizlere numara yazmamızı sağlar. Belirli formatın dışına çıktığınızda hata verecektir.
+
 `<input type="url" placeholder="url giriniz">` - Bu input içine sadece URL adresi girmemizi kabul edecektir. Örn: https://google.com/ 
+
 
 
 
@@ -82,6 +97,7 @@ E'nin çalışma sebebi, sayıların toplam veya çarpım gibi sonuçlarında e�
 
 Sayfa içerisindeki taglara stil vermek için kullanılan tag. Style tagı ile kullanım için div'de bir adet class'a sahip olmalısınız. 
 Not: Style head tagı içerisinde veya body tagının başlangıcında bulunmalıdır.
+
 
 Örnek bir style kodu:
 `<style>.ornek{
