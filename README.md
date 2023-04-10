@@ -1,4 +1,15 @@
-# Tüm HTML Tagları ve Alabileceği Değerler
+# HTML Kullanımı, Sıkça Kullanılan HTML Tagları ve Alabileceği Değerler
+
+Test edeceğiniz ve kullanımını sağlayacağınız ortam sizlerin öğrenme hızını arttıracaktır. 
+Online Olarak Test İçin: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic
+Program olarak Test için (Önerim): Sublime Text
+
+### Neden Sublime Text?
+
+Çünkü, kod yazarken örneğin bir div'i kapatmanız gerektiğinde bunları sizin yerinize halledecektir. İlk işiniz nasıl işlediğini çözmek. Daha sonrasında kullandığınız editörü değiştirebilirsiniz fakat ilk kullanım için sublime text sizlerin işini görecektir.
+
+İndir: https://www.sublimetext.com/3
+
 
 ## HTML Başlangıç sayfası
 
@@ -42,11 +53,24 @@ Teker teker basitçe anlatmak gerekirse;
 `<i> Başlık </i>` - İçerisindeki yazıyı italikleştirmenizi (eğik yazmanızı) sağlayan tag.
 
 - Link (a) Tagı
+
 `<a href="https://google.com" target="_blank">Test</a>` - Bu tag bize Test adında, altı çizili mavi bir yazı verecektir. Tıkladığımızda Google'a yönlendirecektir.
 target içerisindeki blank özelliği ise bu bağlantıyı yeni sekmede açmamızı sağlar. Dilerseniz kullanmayabilirsiniz.
 ---
 
-## İnput Tagı
+## h1-h6 Tagları
+Yazı boyut taglarıdır. Bu taglar, belirli font büyüklükleriyle yazı yazmanızı sağlar. Aşağıdaki şekilde kullanılmaktadır. En büyük yazı h1, en küçük yazı h6 tagıdır.
+`<h1>Yazı</h1>`
+`<h2>Yazı</h2>`
+`<h3>Yazı</h3>`
+`<h4>Yazı</h4>`
+`<h5>Yazı</h5>`
+`<h6>Yazı</h6>`
+
+---
+## Input Tagı
+
+İçerisine veri alan ve bu verileri işlemenizi sağlayan yazı kutularına (textbox) input denir. Inputlar type olmadan kullanılmaz. Tip olarak bir tip belirtmeli ve o formatta veri almalısınız. Aşağıda en yaygın kullanılan inputlar listelenmiştir.
 
 `<input type="text" placeholder="metin giriniz">` - Düz bir biçimde yazı yazmanızı sağlayan textbox çıktısı sağlar.
 `<input type="password" placeholder="şifre giriniz">`- Girdiğiniz tüm karakterleri • şeklinde gizleyerek gösteren textbox çıktısı sağlar
@@ -88,9 +112,25 @@ Bu inputlarda genellikle kullanıcıların oturum kontrolleri bulunmaktadır.
 
 `<input type="url" placeholder="url giriniz">` - Bu input içine sadece URL adresi girmemizi kabul edecektir. Örn: https://google.com/ 
 
+---
+## BR ve HR Tagı
 
+Bu tagların kullanımı aslında oldukça basittir. 
+`<br>` - Satırlar arasında boşluk bırakmanızı sağlar
+`<hr>` - Yatay çizgi eklemenizi sağlar. Örneğin: ______________________
 
+---
+ 
+## Div Tagı
 
+Div, bir çok karışık elementi birleştirmek ve beraber bir düzene oturtmak amacıyla kullanılan tagdır. class ile içine stil verebilirsiniz.
+Örnek kullanım şekli aşağıdaki gibidir: 
+`<div class="ornek">
+<input type="text" placeholder="İsim Giriniz">
+<input type="button" value="Butona Tıkla">
+</div>`
+
+Not: Class değerini atadığınızda ya link tagı ile başka bir dosyadan ya da style tagı ile dosya içerisinden stil düzenlemesi yapabilirsiniz. Aşağıda stil ve link tagı kullanımı mevcut.
 ---
 
 ## style Tagı
@@ -113,12 +153,10 @@ height:150px;
 Bu kodun çıktısı, genişliği(width) 300, yüksekliği (height) 150 pixel, arkaplan rengi kırmızı ve içerisindeki "Test Yazı" adlı yazı beyazdır.
 
 
+## Link Tagı
 
+Link tagı, belirli stil (.css) dosyalarının .html dosyanızın içine entegre edilmesini sağlar.
+Aşağıda basitçe örnek bir kullanımı vardır.
+`<link rel="stylesheet" type="text/css" href="stildosyaniz.css">`
 
-
-```kod bloğu```
-```kod bloğu```
-```kod bloğu```
-```kod bloğu```
-```kod bloğu```
 
