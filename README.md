@@ -1,2 +1,108 @@
-# html
-HTML Tag ve Alabileceği Tüm Type Değerleri
+# Tüm HTML Tagları ve Alabileceği Değerler
+
+## HTML Başlangıç sayfası
+
+Aşağıdaki kurallara uyarak yazmanız gerekmiyor fakat her şeye daha kolay hakim olabilmek için bu şekilde yazmanız daha iyidir. Böyle başlarsanız, böyle devam edersiniz.
+
+Örnek Basit HTML Sayfası:
+```
+<html>
+<head>
+// Head: Clean Code yazımına göre Title ve CSS kullanımlarının bulunabileceği alandır. 
+</head>
+<body>
+// Body: Sayfa içerisinde bulunabilecek tüm kodların bulunacağı alandır. 
+// Not: Javascript kütüphaneleri </body> tagından hemen önce kullanılmalıdır. 
+</body>
+</html>
+```
+---
+
+## title Tagı
+
+Sayfa başlığını belirler. Kullanımı basitçe şu şekildedir:
+`<title> Başlık </title>`
+
+---
+
+## span, p, b, i, a Tagları
+
+Teker teker basitçe anlatmak gerekirse;
+
+- Düz Yazı Stilleri
+
+`<span>Yazı</span>` - Hiçbir stil eklenmesi yapılmadan düz bir biçimde yazı yazmanızı sağlayan tag. Bu tagın verilmesinin sebebi, sadece bu yazıya stil vermek isterseniz, bunu gerçekleştirebilmenizdir.
+`<p> Başlık </p>` - Span tagı ile aynı işlevi görmektedir. Arasındaki tek fark, p tagı yazının altına bir satır boşluk bıraktırır. Span tagının altına br kodu kullanmak gibi.
+
+- Basit Yazı Stilleri
+
+`<b> Başlık </b>` - İçerisindeki yazıyı kalınlaştırmanızı sağlayan tag. 
+`<i> Başlık </i>` - İçerisindeki yazıyı italikleştirmenizi (eğik yazmanızı) sağlayan tag.
+
+- Link (a) Tagı
+`<a href="https://google.com" target="_blank">Test</a>` - Bu tag bize Test adında, altı çizili mavi bir yazı verecektir. Tıkladığımızda Google'a yönlendirecektir.
+target içerisindeki blank özelliği ise bu bağlantıyı yeni sekmede açmamızı sağlar. Dilerseniz kullanmayabilirsiniz.
+---
+
+## İnput Tagı
+
+`<input type="text" placeholder="metin giriniz">` - Düz bir biçimde yazı yazmanızı sağlayan textbox çıktısı sağlar.
+`<input type="password" placeholder="şifre giriniz">`- Girdiğiniz tüm karakterleri • şeklinde gizleyerek gösteren textbox çıktısı sağlar
+`<input type="email" placeholder="email giriniz">` - E-Mail formatı için kullanılan textbox. xxx@x.com gibi kullanılmazsa devam etmenizi engeller.
+`<input type="number" placeholder="sayı giriniz">` - İçine yalnızca sayı girebilirsiniz. İçerisinde harf olarak yalnızca "e" çalışır. 
+E'nin çalışma sebebi, sayıların toplam veya çarpım gibi sonuçlarında eğer büyük bir sayı çıktısı verilirse E olarak belirtilir.
+`<input type="checkbox">` - Checkbox, yani seçim kutusu oluşturmanızı sağlayan input. 5 adet checkbox içerisinden 5'ini de seçebilirsiniz.
+
+Örneğin, aşağıdaki çıktıda dilerseniz hepsini seçebilirsiniz. Dilerseniz yalnızca 1 adet.
+`
+<span> Hangi Şarkıcıyı Dinliyorsun?</span>
+<input type="checkbox"> A 
+<input type="checkbox"> B 
+<input type="checkbox"> C 
+`
+
+`<input type="radio">` - Radio buton seçenekler arasından sadece bir adet seçmenizi sağlayan input tipidir. Örnek olarak, kayıt ol sayfasındaki cinsiyet seçimi radio button ile yapılabilir.
+`<input type="submit" value="Gönder">` - Submit tipi, eğer bir form gönderiyorsanız, Formun işlemesi için gerekli buton tipidir. Verileri alır ve form içerisindeki yönergeleri uygulayarak işler.
+`<input type="button" value="Tıkla">` - Düz butondur. a tagı verilerek link eklenebilir.
+`<input type="reset" value="Sıfırla">`- Submit tipi butonun tam tersidir. POST etmek için doldurduğunuz verileri temizlemek için kullanılır ve FORM içerisindeki tüm inputları sıfırlar.
+`<input type="file" name="myFile">` - Dosya yüklemek için kullanacağımız inputtur. Bu input, bizlerin bilgisayarımızdan dosya yüklemesine olanak sağlar.
+`<input type="hidden" name="myHiddenValue">` - Hidden yani gizli input, bizlerin içerisinde verileri saklamamıza olanak sağlayan ve kullanıcıya gözükmeyen inputlardır. Bu inputlarda genellikle kullanıcıların oturum kontrolleri bulunmaktadır.
+`<input type="date" name="myDate">` - Bu input, bizlere dd,mm,yyyy şeklinde bir input verir. Gün, Ay, Tarih şeklinde seçim yapabilmemizi sağlar. Bu seçimleri dilerseniz yanındaki takvim butonuna basarak siz seçebilirsiniz.
+`<input type="time" name="myTime">` - Time inputu date inputu ile aynı şekilde çalışmaktadır. Sadece, saat seçimi yapılmaktadır.
+`<input type="range" name="myRange" min="0" max="100" value="50">` - Bazı E-Ticaret sitelerinde bulunan fiyat aralığını seç, özelliği kullandıran inputtur. Bu input ile sağa veya sola kaydırarak istediğiniz değerde durdurabilirsiniz. Bu kodta, 0-100 arasında bir değer seçmemiz istenmiş ve sayfa açıldığında ise bu değeri 50 olarak belirlemiş
+`<input type="color" name="myColor" value="#ff0000">` - Bu input bizlere renk seçmemizi sağlayan renk paletini açar. Bu renk paleti ile bizler tüm renkleri seçebilir rgb, hex kodlarını görebiliriz.
+`<input type="tel" placeholder="telefon numarası giriniz">` - Bu inputsa bizlere numara yazmamızı sağlar. Belirli formatın dışına çıktığınızda hata verecektir.
+`<input type="url" placeholder="url giriniz">` - Bu input içine sadece URL adresi girmemizi kabul edecektir. Örn: https://google.com/ 
+
+
+
+---
+
+## style Tagı
+
+Sayfa içerisindeki taglara stil vermek için kullanılan tag. Style tagı ile kullanım için div'de bir adet class'a sahip olmalısınız. 
+Not: Style head tagı içerisinde veya body tagının başlangıcında bulunmalıdır.
+
+Örnek bir style kodu:
+`<style>.ornek{
+background:#ff0000;
+color: #fff;
+width:300px;
+height:150px;
+</style>`
+
+Örnek bir div kodu:
+`<div class="ornek">Test Yazı</div>`
+
+Bu kodun çıktısı, genişliği(width) 300, yüksekliği (height) 150 pixel, arkaplan rengi kırmızı ve içerisindeki "Test Yazı" adlı yazı beyazdır.
+
+
+
+
+
+```kod bloğu```
+```kod bloğu```
+```kod bloğu```
+```kod bloğu```
+```kod bloğu```
+
