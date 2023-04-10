@@ -37,6 +37,7 @@ Aşağıdaki kurallara uyarak yazmanız gerekmiyor fakat her şeye daha kolay ha
 ## title Tagı
 
 Sayfa başlığını belirler. Kullanımı basitçe şu şekildedir:
+
 `<title> Başlık </title>`
 
 ---
@@ -61,10 +62,13 @@ Teker teker basitçe anlatmak gerekirse;
 
 `<a href="https://google.com" target="_blank">Test</a>` - Bu tag bize Test adında, altı çizili mavi bir yazı verecektir. Tıkladığımızda Google'a yönlendirecektir.
 target içerisindeki blank özelliği ise bu bağlantıyı yeni sekmede açmamızı sağlar. Dilerseniz kullanmayabilirsiniz.
+
 ---
 
 ## h1-h6 Tagları
+
 Yazı boyut taglarıdır. Bu taglar, belirli font büyüklükleriyle yazı yazmanızı sağlar. Aşağıdaki şekilde kullanılmaktadır. En büyük yazı h1, en küçük yazı h6 tagıdır.
+
 `<h1>Yazı</h1>`
 `<h2>Yazı</h2>`
 `<h3>Yazı</h3>`
@@ -121,26 +125,32 @@ Bu inputlarda genellikle kullanıcıların oturum kontrolleri bulunmaktadır.
 ## BR ve HR Tagı
 
 Bu tagların kullanımı aslında oldukça basittir. 
+
 `<br>` - Satırlar arasında boşluk bırakmanızı sağlar
-`<hr>` - Yatay çizgi eklemenizi sağlar. Örneğin: ______________________
+
+`<hr>` - Yatay çizgi eklemenizi sağlar. 
+
+Örneğin: ______________________
 
 ---
  
 ## Div Tagı
 
-Div, bir çok karışık elementi birleştirmek ve beraber bir düzene oturtmak amacıyla kullanılan tagdır. class ile içine stil verebilirsiniz.
+Div, bir çok karışık elementi birleştirmek ve beraber bir düzene oturtmak amacıyla kullanılan tagdır. Class ile içine stil verebilirsiniz.
+
 Örnek kullanım şekli aşağıdaki gibidir: 
-`<div class="ornek">
-<input type="text" placeholder="İsim Giriniz">
-<input type="button" value="Butona Tıkla">
-</div>`
+
+`<div class="ornek"><input type="text" placeholder="İsim Giriniz"><input type="button" value="Butona Tıkla"></div>`
+
 
 Not: Class değerini atadığınızda ya link tagı ile başka bir dosyadan ya da style tagı ile dosya içerisinden stil düzenlemesi yapabilirsiniz. Aşağıda stil ve link tagı kullanımı mevcut.
+
 ---
 
 ## style Tagı
 
 Sayfa içerisindeki taglara stil vermek için kullanılan tag. Style tagı ile kullanım için div'de bir adet class'a sahip olmalısınız. 
+
 Not: Style head tagı içerisinde veya body tagının başlangıcında bulunmalıdır.
 
 
